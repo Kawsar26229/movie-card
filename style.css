@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: aliceblue;
+  color: #444;
+}
+
+.card-wrapper {
+  width: 400px;
+  background-color: white;
+  margin: 100px auto;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-image:hover img {
+  filter: grayscale(1);
+}
+
+#imdb-rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 174, 214);
+  color: white;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 0 0 10px 0;
+}
+
+#rotten-rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: orangered;
+  color: white;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 0 0 0 10px;
+}
+
+.card-details {
+  text-align: center;
+}
+
+.card-details h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.card-details p {
+  text-align: justify;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.card-details p:nth-child(2) {
+  color: orangered;
+}
+
+.card-details a {
+  text-decoration: none;
+  background-color: rgba(0, 174, 214, 0.2);
+  font-size: 1.3rem;
+  color: rgb(0, 174, 214);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  display: block;
+  border-radius: 3px;
+  padding: 3px 0;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.card-details a:hover {
+  background-color: rgb(0, 174, 214);
+  color: white;
+  letter-spacing: 8px;
+}
+
+.card-details a:active {
+  background-color: rgba(0, 174, 214, 0.8);
+}
+
+.fa-youtube {
+  margin-right: 10px;
+}
